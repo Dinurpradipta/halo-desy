@@ -6,7 +6,7 @@ let doi;
 if (url.searchParams.get('in') != null) {
   doi = url.searchParams.get('in');
 } else {
-  doi = "Sephia";
+  doi = "Desy";
 }
 
 let footer = document.getElementById("credit");
@@ -59,7 +59,7 @@ function selesai() {
 
 document.querySelector(".tombol").addEventListener('click', function () {
   Swal.fire({
-    title: 'Halo Sephia!',
+    title: 'Halo Desy!',
     html: `Selamat Malam, Kamu udah Makan?`,
     timer: 2500,
     timerProgressBar: true,
@@ -85,7 +85,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
               if (result.dismiss === Swal.DismissReason.timer) {
                 Swal.fire('Semangat terus ya kamu :)').then((result) => {
                   Swal.fire(
-                    'Semangat KKN nya!',
+                    'Jangan Sering Bergadang atau tidur Larut Malam!',
                     '',
                     'error'
                   ).then((result) => {
@@ -115,15 +115,15 @@ document.querySelector(".tombol").addEventListener('click', function () {
                                 }
                               }
                             }).then((result) => {
-                              Swal.fire('Okey Sephia', 'Nanti aku kabulin kemauan kamu yaa', 'success').then((result) => {
-                                Swal.fire("See ya! Anak Bebek wkwk ^^").then((result) => {
+                              Swal.fire('Okey Des', 'Nanti aku kabulin kemauan kamu yaa', 'success').then((result) => {
+                                Swal.fire("See ya! Aku Kangen ^^").then((result) => {
                                   selesai()
                                 });
                               })
                             })
                           } else if (result.isDenied) {
                             Swal.fire('Oh okedeh kalo ga ada').then((result) => {
-                              Swal.fire("See ya! Anak Bebek wkwk ^^").then((result) => {
+                              Swal.fire("See ya! Aku Kangen ^^").then((result) => {
                                 selesai()
                               });
                             })
